@@ -1,0 +1,6 @@
+services:
+  excalidraw:
+    image: excalidraw/excalidraw:latest
+    ports:
+      - "4498:80"
+    restart: unless-stopped
