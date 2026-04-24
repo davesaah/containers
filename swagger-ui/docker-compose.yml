@@ -3,6 +3,8 @@ services:
     image: docker.swagger.io/swaggerapi/swagger-ui
     volumes:
       - ./data:/usr/share/nginx/html/data
+    environment:
+      SWAGGER_JSON: /usr/share/nginx/html/data/gitea.json
     ports:
       - "8094:8080"
     restart: unless-stopped
