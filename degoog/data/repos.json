@@ -1,4 +1,112 @@
 {
-  "repos": [],
-  "installed": []
+  "repos": [
+    {
+      "url": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "localPath": "bea34e7e-fccview-degoog-extensions",
+      "addedAt": "2026-05-08T17:02:21.503Z",
+      "lastFetched": "2026-05-08T17:10:14.711Z",
+      "name": "official-extensions",
+      "description": "Plugins, themes, engines, and transports for degoog search.",
+      "error": null,
+      "repoImage": "https://avatars.githubusercontent.com/u/280656364"
+    }
+  ],
+  "installed": [
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "plugin",
+      "itemPath": "plugins/define",
+      "installedAs": "define",
+      "installedAt": "2026-05-08T17:06:38.841Z",
+      "version": "1.1.2"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "plugin",
+      "itemPath": "plugins/search-history",
+      "installedAs": "search-history",
+      "installedAt": "2026-05-08T17:06:45.255Z",
+      "version": "1.2.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "plugin",
+      "itemPath": "plugins/math-slot",
+      "installedAs": "math-slot",
+      "installedAt": "2026-05-08T17:06:57.914Z",
+      "version": "1.1.1"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "plugin",
+      "itemPath": "plugins/rss",
+      "installedAs": "rss",
+      "installedAt": "2026-05-08T17:07:06.426Z",
+      "version": "1.4.2"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "plugin",
+      "itemPath": "plugins/github-slot",
+      "installedAs": "github-slot",
+      "installedAt": "2026-05-08T17:07:09.683Z",
+      "version": "1.1.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/startpage",
+      "installedAs": "startpage",
+      "installedAt": "2026-05-08T17:07:32.034Z",
+      "version": "1.1.3"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/internet-archive",
+      "installedAs": "internet-archive",
+      "installedAt": "2026-05-08T17:07:37.410Z",
+      "version": "1.0.2"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/duckduckgo-images",
+      "installedAs": "duckduckgo-images",
+      "installedAt": "2026-05-08T17:07:59.537Z",
+      "version": "1.0.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/openverse",
+      "installedAs": "openverse",
+      "installedAt": "2026-05-08T17:08:06.827Z",
+      "version": "1.0.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/wikimedia-commons",
+      "installedAs": "wikimedia-commons",
+      "installedAt": "2026-05-08T17:08:08.387Z",
+      "version": "1.0.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/hacker-news",
+      "installedAs": "hacker-news",
+      "installedAt": "2026-05-08T17:08:10.643Z",
+      "version": "1.0.0"
+    },
+    {
+      "repoUrl": "https://github.com/fccview/fccview-degoog-extensions.git",
+      "type": "engine",
+      "itemPath": "engines/duckduckgo-news",
+      "installedAs": "duckduckgo-news",
+      "installedAt": "2026-05-08T17:08:11.995Z",
+      "version": "1.0.0"
+    }
+  ]
 }

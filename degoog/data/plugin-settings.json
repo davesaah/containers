@@ -1,8 +1,25 @@
 {
   "ai-summary": {
-    "disabled": "true"
+    "disabled": "",
+    "enabled": "true",
+    "baseUrl": "http://192.168.0.114:1234/v1",
+    "model": "ibm/granite-4-h-tiny",
+    "apiKey": "",
+    "timeoutSeconds": "",
+    "systemPrompt": ""
   },
   "ip": {
     "disabled": "true"
+  },
+  "engine-startpage": {
+    "useAnonymousView": "true",
+    "safeSearch": "off"
+  },
+  "engine-duckduckgo-images": {
+    "safeSearch": "off",
+    "hideAiImages": "hide"
+  },
+  "plugin-define": {
+    "naturalLanguage": "true"
   }
 }
