@@ -1,15 +1,16 @@
 services:
   db:
     image: mysql:9.7
-    container_name: mysql_emestore
+    container_name: mysql_base
     restart: always
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root-password
-      MYSQL_DATABASE: emestore
-      MYSQL_USER: eme
-      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: "5z7GbKt8kKXP3LoqOcWMPEwkSETLFT.AgjAyy1Bzlxoij8CAIWcAWvf4.1"
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: davesaah
+      MYSQL_PASSWORD: "5g6oDJ6Fv5eOFiA59vyo3vWtyCBIR02wZ8Lii39OlwAZItiKr8R2YtGrTw0"
+
     volumes:
       - mysql_data:/var/lib/mysql
 
