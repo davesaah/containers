@@ -1,3 +1,7 @@
+
+networks:
+  gitlab-net:
+
 services:
   gitlab:
     image: gitlab/gitlab-ce:latest
@@ -7,19 +11,33 @@ services:
     shm_size: '256m'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-          external_url "http://gitlab.davesaah-pc.com/gitlab"
+          external_url "http://gitlab.davesaah-pc.com"
           gitlab_rails['lfs_enabled'] = true
           gitlab_rails['gitlab_shell_ssh_port'] = 22
           puma['worker_processes'] = 0
           sidekiq['max_concurrency'] = 10
-
     ports:
       - "8088:80"
       - "4443:443"
       - "2222:22" 
-
     volumes:
       - ./config:/etc/gitlab
       - ./logs:/var/log/gitlab
       - ./data:/var/opt/gitlab
+    networks:
+      - gitlab-net
+
+
+  gitlab-runner:
+    image: gitlab/gitlab-runner:latest
+    container_name: gitlab-runner
+    restart: unless-stopped
+    depends_on:
+      - gitlab
+    volumes:
+      - ./runner-config:/etc/gitlab-runner
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - gitlab-net
+
 
