@@ -1,1 +1,5 @@
 *.env
+gitlab/config
+gitlab/data
+gitlab/logs
+gitlab/gitlab
