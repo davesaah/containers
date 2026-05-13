@@ -12,12 +12,15 @@ services:
     environment:
       GITLAB_OMNIBUS_CONFIG: |
           external_url "http://gitlab.davesaah-pc.com"
+          registry_external_url 'http://gitlab.davesaah-pc.com:5050'
+          gitlab_rails['registry_enabled'] = true
           gitlab_rails['lfs_enabled'] = true
           gitlab_rails['gitlab_shell_ssh_port'] = 22
           puma['worker_processes'] = 0
           sidekiq['max_concurrency'] = 10
     ports:
       - "8088:80"
+      - "5050:5050"
       - "4443:443"
       - "2222:22" 
     volumes:
